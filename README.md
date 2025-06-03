@@ -1,3 +1,3 @@
-# 2025_ICML_DSVC
+# 2025 ICML DSVC
 
 Code for Deep Streaming View Clustering
