@@ -1,7 +1,7 @@
 # Deep Streaming View Clustering（ICML 2025）
 
 This repo contains the code and data of our paper "Deep Streaming View Clustering". If you have any questions about the source code, please contact: hl_yuan0822@163.com.
-
+![framework](/figure/Overview.png)
 ## Requirements
 
 pytorch==1.2.0 
