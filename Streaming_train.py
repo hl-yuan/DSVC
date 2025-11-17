@@ -76,7 +76,7 @@ def train_view_0(decoder_model, Dual_attention, optimizer_Streaming, Xv, Y, v, p
         Buffer[0] = Proto_total
         Buffer[1] = Atten_total
 
-        if epoch+1 == 1 or (epoch + 1) % 5 == 0:
+        if epoch+1 == 1 or (epoch + 1) % 200 == 0:
             with torch.no_grad():
                 Dual_attention_G = dual_attention(dim=config.feature_dim, num=(config.Knowledge_size * (batch_idx + 1))).cuda()
 
@@ -160,7 +160,7 @@ def train_view(decoder_model, Dual_attention, optimizer_Streaming, Xv, Y, v, pat
 
 
 
-        if epoch+1 == 1 or (epoch + 1) % 5 == 0:
+        if epoch+1 == 1 or (epoch + 1) % 200 == 0:
             with torch.no_grad():
                 Dual_attention_G = dual_attention(dim=config.feature_dim, num=(config.Knowledge_size * (batch_No))).cuda()
                 Buffer[0] = torch.tensor(Buffer[0]).cuda()
